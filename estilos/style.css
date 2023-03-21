@@ -7,29 +7,45 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 html, body {
     background-color: #5f2c82;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
-    position: relative;
-    margin: auto;
+    height: 500px;
     border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 }
-#img {
+section#login div#img {
+    display: block;
     background-image: url(../imagens/metal.jpg);
     background-repeat: no-repeat;
     /* background-size: contain; */
     background-position: center right;
     width: 250px;
-    height: 180px;
+    height: 200px;
 }
 #formulario {
+    display: block;
     padding: 10px;
 }
 #formulario h1 {
@@ -42,34 +58,43 @@ main {
     font-size: 0.8em;
     margin-bottom: 5px;
 }
-#dados {
+
+
+.campo {
     background-color: #5f2c82;
-    margin-bottom: 5px;
+    border: 2px solid #5f2c82;
+    display: block;
+    margin: 5px 0px;
     text-align: center;
     border-radius: 10px;
     width: 100%;
     height: 40px;
 }
+.campo label {
+    display: none;
+}
 
-#dados label img {
-    width: 35px;
-    position: relative;
-    left: 1px;
-    top: 3px
+.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    display: block;
 }
-#dados input {
-    background-color: aliceblue;
-    height: 34px;
-    width: 170px;
-    position: relative;
-    left: 2px;
-    top: -11px;
-    border-radius: 8px;
-    border: none;
-    padding: 0px 5px;
+.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    transform: translate(22px, -42px);
+    border: 0px;
+    border-radius: 9px;
+    padding: 4px;
+
 }
-#dados input:focus {
-    background-color: #98cecb;
+
+.campo > input:focus {
+    background-color: white;
 }
 
 #btEntrar {
@@ -100,4 +125,7 @@ main {
 }
 #btEsqueci img {
     width: 15px;
+}
+#btEsqueci span {
+    font-size: 1em;
 }
