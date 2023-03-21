@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* PALETA DE CORES
+    VERDE: #49a09d
+    LILAS: #5f2c82
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background-color: #5f2c82;
+}
+
+main {
+    background-color: white;
+    width: 250px;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+}
+#img {
+    background-image: url(../imagens/metal.jpg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center right;
+    width: 250px;
+    height: 180px;
+}
+#formulario {
+    padding: 10px;
+}
+#formulario h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#formulario p {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+#dados {
+    background-color: #5f2c82;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+#dados label img {
+    width: 35px;
+    position: relative;
+    left: 1px;
+    top: 3px
+}
+#dados input {
+    background-color: aliceblue;
+    height: 34px;
+    width: 170px;
+    position: relative;
+    left: 2px;
+    top: -11px;
+    border-radius: 8px;
+    border: none;
+    padding: 0px 5px;
+}
+#dados input:focus {
+    background-color: #98cecb;
+}
+
+#btEntrar {
+    width: 100%;
+    height: 36px;
+    background-color: #49a09d;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#btEntrar:hover {
+    background-color: #39807d;
+}
+
+#btEsqueci {
+    width: 100%;
+    height: 36px;
+    border-radius: 10px;
+    color: #49a09d;
+    border: 1px solid #49a09d;
+    font-weight: bold;
+    cursor: pointer;
+}
+#btEsqueci:hover {
+    background-color: aliceblue;
+}
+#btEsqueci img {
+    width: 15px;
+}

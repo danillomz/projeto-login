@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+                <!-- <img src="imagens/metal.jpg" alt="predio"> -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faca login para acessar sua conta e 
+                    poder fazer as configuracoes no seu ambiente.
+                </p>
+                <form action="login.php" method="post">
+                    <div id="dados">
+                        <label for="email"><img src="imagens/icon-login.png" alt="login"></label>
+                        <input type="email" name="mail" id="email">
+                    </div>
+                    <div id="dados">
+                        <label for="senha"><img src="imagens/icon-senha.png" alt="senha"></label>
+                        <input type="password" name="sen" id="senha">
+                    </div>
+
+                    <button type="submit" id="btEntrar">Entrar</button>
+                    <button type="submit" id="btEsqueci">Esqueci a senha <img src="imagens/icon-email.png" alt="email"></button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
