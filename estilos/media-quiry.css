@@ -1,0 +1,116 @@
+@charset "'UTF-8'";
+
+/* TODAS AS DEMAIS MIDIAS */
+
+/* Tupical Device Breakpoints
+----------------------------------
+
+PEQUENAS TELAS ate 600px
+CELULAR: de 600px ate 768px
+TABLET: 768 ate 992px
+DESKTOP: 992px ate 1200px
+GRANDES TELAS: acima de 1200px
+*/
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-color: aqua;
+    }
+    section#login {
+        width: 80vw;
+    }
+    section#login > div#img {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+ /*    seciton#login   */ div#formulario {
+        float: right;
+        width: 70%;
+    }
+
+    #formulario {
+        margin-top: 30px;
+        padding: 30px;
+    }
+    #formulario h1 {
+        font-size: 2em;
+    }
+    #formulario p {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .campo {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+
+    #botoes {
+        text-align: center;
+        width: 100%;
+
+    }
+    #btEntrar {
+        width: 80%;
+
+    }
+
+    #btEsqueci {
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: rgb(104, 126, 185);
+    }
+    section#login {
+        width: 50vw;
+    }
+    section#login > div#img {
+        float: right;
+        width: 30%;
+        height: 100%;
+    }
+ /*    seciton#login   */ div#formulario {
+        float: left;
+        width: 70%;
+    }
+    #formulario {
+        margin-top: 30px;
+        padding: 30px;
+    }
+    #formulario h1 {
+        font-size: 2em;
+    }
+    #formulario p {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .campo {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+
+    #botoes {
+        text-align: center;
+        width: 100%;
+
+    }
+    #btEntrar {
+        width: 80%;
+
+    }
+
+    #btEsqueci {
+        width: 80%;
+    }
+}
